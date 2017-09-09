@@ -1,2 +1,3 @@
 # lbp
-Study
+hunmans!
+bingbuliaojiezheshizenmhuishi
