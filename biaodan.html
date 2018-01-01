@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户个人信息填写</title>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+
+<style type="text/css">
+.bd {
+	height:12px;
+	width:100px;
+	border:1px solid #999;
+}
+.bd2 {
+	height:12px;
+	width:160px;
+	border:1px solid #999;
+}
+.bd3 {
+	height:50px;
+	width:200px;
+	border:1px solid #999;
+}
+#div{
+	height:320px;
+	width:680px;
+	position: absolute;
+	left:50%;
+	top:30%;
+	margin:-159px auto auto -340px;
+}
+#div #div1 {
+	height:94px;
+	width:100%;
+	border-radius:10px;
+}
+#div #div1 #title {
+	line-height:94px;
+	font-size:34px;
+	color:#921AFF;
+	width:545px;
+	height:90px;
+	float:left;
+}
+#div #div2 {
+	border-radius:10px;
+	height:470px;
+	width:670px;
+	border:6px solid;
+	border-color:#FFAAD5;
+}
+</style>
+</head>
+<body bgcolor="#FF9797">
+	<div id="div">
+		<div id="div1">
+			<div id="title">
+				<marquee width=455px height=75px vspace="5" hspace="5" behavior="scroll"></marquee>
+			</div>
+		</div>
+<div id="div2">
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+	<select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+		<option>===请选择===</option>
+		<option value="http://www.baidu.com">百度</option>
+	</select>
+	<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+			<td height="25" colspan="2" align="center" bgcolor="#FFCC33">请完成以下表单</td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">姓名：</td>
+			<td height="25"><label for="name"></label>
+			<input name="name" type="text" class="bd" id="name" size="15" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">密码：</td>
+			<td height="25"><label for="password"></label>
+			<input name="password" type="password" class="bd" id="password" size="15" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">确认密码：</td>
+			<td height="25"><label for="password2"></label>
+			<input name="password2" type="password" class="bd" id="password2" size="15" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">性别：</td>
+			<td height="25"><input type="radio" name="sex" id="radio" value="男" />
+			<label for="sex">男
+			<input type="radio" name="sex" id="radio2" value="女" />女</label></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">籍贯：</td>
+			<td height="25"><label for="select"></label>
+		<select name="select" id="select">
+			<option value="广西">广西</option>
+			<option value="广东">广东</option>
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">电子邮件：</td>
+			<td height="25"><label for="textfield"></label>
+			<input name="textfield" type="text" class="bd2" id="textfield" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">住址：</td>
+			<td height="25"><label for="textfield2"></label>
+			<input name="textfield2" type="text" class="bd2" id="textfield2" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">个人爱好：</td>
+			<td height="25"><input name="aihao" type="checkbox" id="aihao" value="电脑网络" />
+			<label for="aihao">电脑网络
+			<input name="aihao" type="checkbox" id="aihao" value="流行音乐" />流行音乐
+			<input name="aihao" type="checkbox" id="aihao" value="旅游观光" />旅游观光<br/>
+			<input name="aihao" type="checkbox" id="aihao" value="读书看报" />读书看报
+			<input name="aihao" type="checkbox" id="aihao" value="体育运动" />体育运动
+			<input name="aihao" type="checkbox" id="aihao" value="书法绘画" />书法绘画 </label></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">照片：</td>
+			<td height="25" valign="top"><label for="fileField"></label>
+			<input name="fileField" type="file" id="fileField" /></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right" valign="top">留言：</td>
+			<td height="25"><label for="textarea"></label>
+			<textarea name="textarea" cols="30" rows="5" class="bd3" id="textarea"></textarea></td>
+		</tr>
+		<tr>
+			<td width="120" height="25" align="right">&nbsp;</td>
+			<td height="25">
+			<p>
+				1、填写以上各项内容<br />
+				2、谢谢您提交以上重要信息
+			</p>
+			</td>
+		</tr>
+    <tr bgcolor="#FFCC33">
+		<td height="25" colspan="2" align="center">填写完成后，选择下面的“提交“按钮提交表单。</td>
+    </tr>
+    <tr>
+		<td height="25" colspan="2" align="center"><input type="submit" name="tijiao" id="tijiao" value="提交" /> 
+        <input type="reset" name="button" id="button" value="重写" /></td>
+    </tr>
+	</table>
+</form>
+</div>
+</div>
+</body>
+</html>
